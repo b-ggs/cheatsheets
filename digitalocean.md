@@ -26,3 +26,6 @@ Make swap file permanent by editing fstab.
 Append this to the end of the file.
 
     /swapfile   none    swap    sw    0   0
+
+## Set up SFTP via Key-based Authentication
+Refer to [this](https://www.digitalocean.com/community/tutorials/how-to-use-filezilla-to-transfer-and-manage-files-securely-on-your-vps).

@@ -2,7 +2,7 @@
 The hell I had to go through from switching to Fedora 23 from Ubuntu 15.04, and from a tiling WM (i3-gaps) back to a full GUI experience (gnome-shell).
 
 ## Improving font rendering
-Partially taken from [https://ask.fedoraproject.org/en/question/55168/how-to-improve-fonts-and-font-rendering-in-fedora-20/](this fedoraproject question) and [http://www.binarytides.com/gorgeous-looking-fonts-ubuntu-linux/](this blog post).
+Partially taken from [this fedoraproject question](https://ask.fedoraproject.org/en/question/55168/how-to-improve-fonts-and-font-rendering-in-fedora-20/) and [this blog post](http://www.binarytides.com/gorgeous-looking-fonts-ubuntu-linux/).
 
 * Install `freetype-freeworld` from rpmfusion.
 ```

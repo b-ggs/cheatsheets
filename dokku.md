@@ -37,6 +37,11 @@ git remote add dokku dokku@#{host}:#{app_name}
 git push dokku master
 ```
 
+## Run commands on dokku containers
+```
+dokku run #{app_name} #{command}
+```
+
 ## Only use subdomains for apps
 Taken from [this DO question](https://www.digitalocean.com/community/questions/how-do-i-reconfigure-top-level-routing-on-the-digitalocean-dokku0-2-3-14-04-one-click-application).
 

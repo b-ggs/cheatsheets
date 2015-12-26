@@ -1,4 +1,6 @@
 # ASUS X450LDV
+This originally hosted on my [dotfiles](https://github.com/b-ggs/dotfiles) repository. I have since moved to a different laptop, so these may be outdated.
+
 ## Ubuntu 15.04 Vivid Vervet issues
 To fix issues present when I last installed Ubuntu Vivid.
 

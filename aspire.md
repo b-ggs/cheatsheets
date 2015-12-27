@@ -1,7 +1,7 @@
 # Acer Aspire E5-473-30N5
 Yay, laptop that runs Linux well! But wow, this was a pain to set up.
 
-## EFI Issues
+## EFI issues
 After multiple installs of Ubuntu and Debian, I never knew why the laptop wouldn't boot into the OS. I double checked in the install that I properly added the bootloader to the correct partition, but for some reason, it still didn't work.
 
 After a bit of searching I found [this](http://askubuntu.com/questions/150174/sony-vaio-with-insyde-h2o-efi-bios-will-not-boot-into-grub-efi).
@@ -31,6 +31,11 @@ So, here are the revised instructions to get the adapter working.
 First, download the necessary files.
 * [backports-20151120](https://www.kernel.org/pub/linux/kernel/projects/backports/2015/11/20/backports-20151120.tar.xz)
 * Commit `7d14e337ad25c0ef3e78fc47eac336697ca612e8` of kvalo/ath10k-firmware. [Download ZIP](https://github.com/kvalo/ath10k-firmware/archive/7d14e337ad25c0ef3e78fc47eac336697ca612e8.zip)
+
+Also, make sure you have the dependencies installed.
+```
+# apt-get install build-essential linux-headers-$(uname -r) git
+```
 
 Next, extract `backports`, and run the following inside the resulting directory.
 ```

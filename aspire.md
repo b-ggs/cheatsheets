@@ -34,6 +34,10 @@ First, download the necessary files.
 
 Also, make sure you have the dependencies installed.
 ```
+# pacman -S linux-headers
+```
+or
+```
 # apt-get install build-essential linux-headers-$(uname -r) git
 ```
 
@@ -46,8 +50,8 @@ $ make
 
 Finally, inside the `ath10k-firmware` repository, run the following as root.
 ```
-# cp -r ath10k-firmware/ath10k/ /lib/firmware/
-# cp -r ath10k-firmware/QCA9377 /lib/firmware/ath10k/
+# cp -r ath10k/ /lib/firmware/
+# cp -r QCA9377 /lib/firmware/ath10k/
 # mv /lib/firmware/ath10k/QCA9377/hw1.0/firmware-5.bin_WLAN.TF.1.0-00267-1 /lib/firmware/ath10k/QCA9377/hw1.0/firmware-5.bin
 ```
 

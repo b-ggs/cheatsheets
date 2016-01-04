@@ -57,5 +57,5 @@ Add user to `vboxusers` group.
 
 Enable the `dkms` service.
 ```
-systemctl enable dkms.service
+# systemctl enable dkms.service
 ```

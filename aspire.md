@@ -56,3 +56,25 @@ Finally, inside the `ath10k-firmware` repository, run the following as root.
 ```
 
 After rebooting, you should be able to detect and connect to wireless networks.
+
+## Screen tearing issues
+Tearing. Typical. When will Wayland be stable?
+
+Create an Intel graphics configuration file.
+```
+# sudo vim /etc/X11/xorg.conf.d/20-intel.conf
+```
+
+Put in the following:
+```
+Section "Device"
+  Identifier  "Intel Graphics"
+  Driver  "intel"
+  Option "AccelMethod" "sna"
+  Option "TearFree" "true"
+EndSection
+```
+
+Save the file.
+
+This may cause video performance issues. I usually remove the `TearFree` option when I don't need to watch video on my secondary display - which I don't really do much in the first place. I just put it back in when I actually need it.

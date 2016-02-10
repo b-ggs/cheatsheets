@@ -59,3 +59,13 @@ Enable the `dkms` service.
 ```
 # systemctl enable dkms.service
 ```
+
+## Rolling back packages
+```
+$ cd /var/cache/pacman/pkg
+```
+
+```
+# pacman -U #{package_name}.pkg.tar.xz
+```
+

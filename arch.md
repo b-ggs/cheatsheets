@@ -69,3 +69,8 @@ $ cd /var/cache/pacman/pkg
 # pacman -U #{package_name}.pkg.tar.xz
 ```
 
+## Pacman over proxy
+In `/etc/pacman.conf`
+```
+XferCommand = /usr/bin/wget --passive-ftp --proxy=on -c -O %o %u
+```

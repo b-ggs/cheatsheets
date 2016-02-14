@@ -58,3 +58,9 @@ server {
 ```
 
 Restart nginx with `/etc/init.d/nginx restart`.
+
+## Add ssh key to dokku
+On host machine:
+```
+$ cat ~/.ssh/id_rsa.pub | ssh root@#{dokku_ip} "sudo sshcommand acl-add dokku #{description}" 
+```

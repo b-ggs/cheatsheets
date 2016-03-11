@@ -62,7 +62,7 @@ Tearing. Typical. When will Wayland be stable?
 
 Create an Intel graphics configuration file.
 ```
-# sudo vim /etc/X11/xorg.conf.d/20-intel.conf
+# vim /etc/X11/xorg.conf.d/20-intel.conf
 ```
 
 Put in the following:
@@ -77,4 +77,6 @@ EndSection
 
 Save the file.
 
-This may cause video performance issues. I usually remove the `TearFree` option when I don't need to watch video on my secondary display - which I don't really do much in the first place. I just put it back in when I actually need it.
+## Touchpad x GNOME issues
+
+Make sure `xf86-input-libinput` is installed.
